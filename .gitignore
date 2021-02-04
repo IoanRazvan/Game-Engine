@@ -26,6 +26,10 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+(NewTrainingFramework|Utilities)/Debug-ATI/
+(NewTrainingFramework|Utilities)/Debug-Nvidia/
+(NewTrainingFramework|Utilities)/Release-ATI/
+(NewTrainingFramework|Utilities)/Release-Nvidia/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
