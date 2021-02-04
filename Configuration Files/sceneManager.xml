@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sceneManager>
+  <gameName>My game engine</gameName>
+  <defaultScreenSize>
+    <width>1920</width>
+    <height>1080</height>
+    <!--<fullscreen/>-->
+  </defaultScreenSize>
+  <fogProperties>
+    <r>400</r>
+    <R>900</R>
+    <cube_texture id = "20"/>
+  </fogProperties>
+  <backgroundColor>
+    <r>0.0</r>
+    <g>0.0</g>
+    <b>0.0</b>
+  </backgroundColor>
+  <debugModeKey>I</debugModeKey>
+  <debugAxisShader>31</debugAxisShader>
+  <switchActiveCameraKey>N</switchActiveCameraKey>
+  <controls>
+    <control>
+      <key>W</key>
+      <action>MOVE_CAMERA_POSITIVE_Z</action>
+    </control>
+    <control>
+      <key>S</key>
+      <action>MOVE_CAMERA_NEGATIVE_Z</action>
+    </control>
+    <control>
+      <key>A</key>
+      <action>MOVE_CAMERA_POSITIVE_X</action>
+    </control>
+    <control>
+      <key>D</key>
+      <action>MOVE_CAMERA_NEGATIVE_X</action>
+    </control>
+    <control>
+      <key>VK_UP</key>
+      <action>ROTATE_CAMERA_NEGATIVE_X</action>
+    </control>
+    <control>
+      <key>VK_DOWN</key>
+      <action>ROTATE_CAMERA_POSITIVE_X</action>
+    </control>
+    <control>
+      <key>VK_RIGHT</key>
+      <action>ROTATE_CAMERA_POSITIVE_Y</action>
+    </control>
+    <control>
+      <key>VK_LEFT</key>
+      <action>ROTATE_CAMERA_NEGATIVE_Y</action>
+    </control>
+    <control>
+      <key>Z</key>
+      <action>MOVE_CAMERA_POSITIVE_Y</action>
+    </control>
+    <control>
+      <key>X</key>
+      <action>MOVE_CAMERA_NEGATIVE_Y</action>
+    </control>
+    <control>
+      <key>R</key>
+      <action>ROTATE_CAMERA_NEAGTIVE_Z</action>
+    </control>
+    <control>
+      <key>T</key>
+      <action>ROTATE_CAMERA_POSITIVE_Z</action>
+    </control>
+ 
+  </controls>
+
+  <cameras>
+    <camera id="1">
+      <comment>elemntul type este folosit doar in taskul optional cu tipurile de Camera </comment>
+      <type>firstPerson</type>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>-500</z>
+      </position>
+      <target>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </target>
+      <up>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </up>
+      <translationSpeed>1000</translationSpeed>
+      <rotationSpeed>60</rotationSpeed>
+      <fov>45</fov>
+      <near>0.2</near>
+      <far>15000</far>
+    </camera>
+    <!--<camera id="2">
+      <comment>elemntul type este folosit doar in taskul optional cu tipurile de Camera </comment>
+      <type>firstPerson</type>
+      <position>
+        <x>300</x>
+        <y>400</y>
+        <z>0</z>
+      </position>
+      <target>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </target>
+      <up>
+        <x>0.48</x>
+        <y>-0.36</y>
+        <z>0</z>
+      </up>
+      <translationSpeed>1000</translationSpeed>
+      <rotationSpeed>60</rotationSpeed>
+      <fov>45</fov>
+      <near>0.2</near>
+      <far>10000</far>
+    </camera>-->
+    <camera id="3">
+      <comment>elemntul type este folosit doar in taskul optional cu tipurile de Camera </comment>
+      <type>firstPerson</type>
+      <position>
+        <x>300</x>
+        <y>0</y>
+        <z>-500</z>
+      </position>
+      <target>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </target>
+      <up>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+      </up>
+      <translationSpeed>1000</translationSpeed>
+      <rotationSpeed>60</rotationSpeed>
+      <fov>45</fov>
+      <near>0.2</near>
+      <far>100000</far>
+    </camera>
+	  <camera id="333">
+		  <comment>elemntul type este folosit doar in taskul optional cu tipurile de Camera </comment>
+		  <type>firstPerson</type>
+		  <position>
+			  <x>-100</x>
+			  <y>600</y>
+			  <z>0</z>
+		  </position>
+		  <target>
+			  <x>0</x>
+			  <y>0</y>
+			  <z>0</z>
+		  </target>
+		  <up>
+			  <x>0</x>
+			  <y>1</y>
+			  <z>0</z>
+		  </up>
+		  <translationSpeed>1000</translationSpeed>
+		  <rotationSpeed>60</rotationSpeed>
+		  <fov>45</fov>
+		  <near>0.2</near>
+		  <far>15000</far>
+	  </camera>
+  </cameras>
+  <activeCamera>1</activeCamera>
+
+
+  <objects>
+    <comment>
+      in interiorul elementelor model, shader, texture, se gaseste id-ul corespunzator resursei din sceneManager.xml
+      Elementul position se refera practic la translatia obiectului.
+    </comment>
+    <object id="100">
+      <model>1</model>
+      <shader>10</shader>
+      <type>normal</type>
+      <name>Crocodil_verde</name>
+      <textures>
+        <texture id="4"/>
+      </textures>
+      <position>
+        <x>0</x>
+        <y>0</y>
+        <z>-400</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>3.14</y>
+        <z>3.14</z>
+      </rotation>
+      <color>
+        <r>1.0</r>
+        <g>0.0</g>
+        <b>0.0</b>
+      </color>
+      <scale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+      </scale>
+
+      <!--
+			Exemple de alte configurari care vor fi adaugate si parsate mai tarziu (pentru taskuri ulterioare)
+			<followingCamera>
+				<cameras>
+					<camera>1</camera>
+				</cameras>
+				<ox/>
+				<oy/>
+				<oz/>
+			</followingCamera> -->
+			<!--<trajectory type="linear" iteration="infinite" direction="alternate" speed="4">
+				<comment>startpoint e chiar pos</comment>
+        <points>
+          <point>
+            <x>23</x>
+            <y>43</y>
+            <z>55</z>
+          </point>
+        </points>
+			</trajectory>-->
+      <!--    
+			<lights>
+				<light>1</light>
+			</lights>
+      -->
+    </object>
+    <object id="123">
+      <model>17</model>
+      <shader>10</shader>
+      <type>normal</type>
+      <wired/>
+      <name>Bus</name>
+      <textures>
+        <texture id="5"/>
+      </textures>
+      <position>
+        <x>-100</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>-1.57</y>
+        <z>0</z>
+      </rotation>
+      <color>
+        <r>1.0</r>
+        <g>0.0</g>
+        <b>0.0</b>
+      </color>
+      <scale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+      </scale>
+    </object>
+    <object id="3">
+      <model>5</model>
+      <shader>27</shader>
+      <type>normal</type>
+      <name>Mesh_minge</name>
+      <color>
+        <r>1.0</r>
+        <g>0.0</g>
+        <b>0.0</b>
+      </color>
+      <position>
+        <x>100</x>
+        <y>0</y>
+        <z>75</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <textures>
+        <texture id ="20" />
+      </textures>
+      <scale>
+        <x>2.5</x>
+        <y>2.5</y>
+        <z>2.5</z>
+      </scale>
+    </object>
+    <object id="3">
+      <model>5</model>
+      <shader>28</shader>
+      <type>normal</type>
+      <name>Mesh_minge</name>
+      <color>
+        <r>1.0</r>
+        <g>0.0</g>
+        <b>0.0</b>
+      </color>
+      <position>
+        <x>400</x>
+        <y>0</y>
+        <z>75</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+      </rotation>
+      <textures>
+        <texture id ="20" />
+        <texture id ="30" />
+      </textures>
+      <scale>
+        <x>2.5</x>
+        <y>2.5</y>
+        <z>2.5</z>
+      </scale>
+    </object>
+    <object id="8">
+      <model>generated</model>
+      <shader>8</shader>
+      <type>terrain</type>
+      <name>Teren</name>
+      <offsetY>100</offsetY>
+      <cell_dim>500</cell_dim>
+      <cells>8</cells>
+      <heights>
+        <r>50</r>
+        <g>-30</g>
+        <b>0</b>
+      </heights>
+      <textures>
+        <texture id="18"/>
+        <texture id="14" color="r"/>
+        <texture id="15" color="g"/>
+        <texture id="16" color="b"/>
+      </textures>
+      <position>
+        <x>0</x>
+        <y>-50</y>
+        <z>10</z>
+      </position>
+      <rotation>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </rotation>
+      <scale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+      </scale>
+    </object>
+    <object id ="20">
+      <model>19</model>
+      <shader>21</shader>
+      <type>skybox</type>
+      <name>Cer</name>
+      <textures>
+        <texture id="20"/>
+      </textures>
+      <position>
+        <x>0</x>
+        <y>4500</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>0</y>
+        <z>3.14</z>
+      </rotation>
+      <followingCamera>
+        <ox/>
+        <oy/>
+        <oz/>
+      </followingCamera>
+      <scale>
+        <x>6500</x>
+        <y>6500</y>
+        <z>6500</z>
+      </scale>
+    </object>
+    <object id="34">
+      <model>25</model>
+      <shader>26</shader>
+      <type>fire</type>
+      <name>Fire</name>
+      <textures>
+        <texture id="22"/>
+        <texture id ="23"/>
+        <texture id ="24"/>
+      </textures>
+      <position>
+        <x>0</x>
+        <y>-230</y>
+        <z>0</z>
+      </position>
+      <rotation>
+        <x>0</x>
+        <y>3.14</y>
+        <z>0</z>
+      </rotation>
+      <dispMax>0.16</dispMax>
+      <scale>
+        <x>20.0</x>
+        <y>20.0</y>
+        <z>20.0</z>
+      </scale>
+    </object>
+  </objects>
+
+  <!--
+	<ambientalLight>
+		<color>
+			<r>1.0</r>
+			<g>1.0</g>
+			<b>1.0</b>
+		</color>
+		<ratio>0.2</ratio>
+	</ambientalLight>
+	
+	<lights>
+		<light id="1">
+			<associatedObject>2</associatedObject>
+			<diffuseColor>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</diffuseColor>
+			<specularColor>
+				<r>1.0</r>
+				<g>1.0</g>
+				<b>1.0</b>
+			</specularColor>
+			<type>point</type>
+		</light>
+	</lights>
+	-->
+  <debugSettings>
+    <objectAxes>
+      <OXColor>
+        <r>1.0</r>
+        <g>0.0</g>
+        <b>0.0</b>
+      </OXColor>
+      <OYColor>
+        <r>0.0</r>
+        <g>1.0</g>
+        <b>0.0</b>
+      </OYColor>
+      <OZColor>
+        <r>0.0</r>
+        <g>0.0</g>
+        <b>1.0</b>
+      </OZColor>
+    </objectAxes>
+    <camAxes>
+      <OXColor>
+        <r>1.0</r>
+        <g>1.0</g>
+        <b>0.0</b>
+      </OXColor>
+      <OYColor>
+        <r>0.0</r>
+        <g>1.0</g>
+        <b>1.0</b>
+      </OYColor>
+      <OZColor>
+        <r>1.0</r>
+        <g>0.0</g>
+        <b>1.0</b>
+      </OZColor>
+    </camAxes>
+  </debugSettings>
+</sceneManager>
